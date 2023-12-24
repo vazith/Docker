@@ -156,9 +156,9 @@ IF ANY TEAM NEED TO TEST THE APPLICATION THEY SIMPLE DOWNLOAD THAT DOCKER IMAGES
 BY USING ONE DOCKER IMAGES WE CAN RUN IN "n" NUMBER OF SYSTEMS WHICH IS CALLED AS DOCKER CONTAINER
 
 
-============================
+==================================================================================
 DOCKER ARCHIECHTURE
-============================
+==================================================================================
 1) DOCKER FILE
 2) DOCKER IMAGE
 3) DOCKER REGISTRY
@@ -176,11 +176,54 @@ DOCKER ARCHIECHTURE
       |                                     |
       V                                     |
 |___________|                        |______________|
-|           |    ( BUILD )           |              |
-|  DOCKER   | -------------------- > | DOCKER       | 
-|     FILE  |                        |    IMAGES    |
-|___________|                        |              |
-                                     |______________|
+|           |    ( BUILD )           |              |              |_______________|
+|  DOCKER   | -------------------- > | DOCKER       |    ( RUN )   |               |
+|     FILE  |                        |    IMAGES    |------------->|  DOCKER       |
+|___________|                        |              |              |     CONTAINER |
+                                     |______________|              |_______________|
+
+
+DOCKER FILE..?
+DOCKERFILE IS A TEXT DOCUMENT THAT CONTAINS INSTRUCTIONS FOR BUILDING A DOCKER IMAGE. 
+IT SPECIFIES THE STEPS REQUIRED TO SET UP THE ENVIRONMENT, INSTALL DEPENDENCIES (OR)
+SOFTWARE COPY YOUR APPLICATION CODE, AND CONFIGURE SETTINGS FOR YOUR CONTAINER.
+
+DOCKER IMAGE..?
+A DOCKER IMAGE IS A READ-ONLY TEMPLATE USED TO CREATE CONTAINER INSTANCES.
+IT'S LIKE A SNAPSHOT OF A CONTAINER'S ENTIRE FILE SYSTEM AND CONFIGURATION AT 
+A SPECIFIC POINT IN TIME
+( IT IS A PACKAGES WHICH CONTAIN CODE + SOFTWARES (or) DEPENDICES  )
+
+DOCKER REGISTRY..?
+DOCKER HUB IS A PUBLIC REGISTRY OF PRE-BUILT DOCKER IMAGES. IT ALLOWS USERS TO SHARE AND DISCOVER IMAGES 
+FOR VARIOUS APPLICATIONS AND TOOLS.
+
+DOCKER CONTAINER...?
+WHEN WE RUN DOCKER IMAGE THEN DOCKER CONTAINER WILL BE CREATED . OUR APPLICATION WILL EXCUTE INSIDE THE DOCKER 
+CONTAINER 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
