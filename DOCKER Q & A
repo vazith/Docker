@@ -58,8 +58,8 @@ THEY ARE
 APPLICATION ENIVORMENTS 
 ========================
 1. DEV : (DEVLOPERS )DEVLOPERS WILL USE IT FOR INTERGERATION TEST ( FINALY DEVLOPER TEST THE APPLICATION) 
-DEVOLPERS TAKE ONE ENIVORMRNTS AND TEST THE APPLICATION ( IN THAT ENIVORMRNT THEY DOWNLOAD ALL THE THINGS LIKE ( ANGULAR , JAVA .MYSQL , TOMCAT )
-BY THEY USED VERSION OF THAT APPLICATION )
+DEVOLPERS TAKE ONE ENIVORMRNTS AND TEST THE APPLICATION ( IN THAT ENIVORMRNT THEY DOWNLOAD ALL THE THINGS LIKE
+( ANGULAR , JAVA .MYSQL , TOMCAT ) BY THEY USED VERSION OF THAT APPLICATION )
 2. SIT : (SYSTEM INTEGERATION TESTING ) TESETER TEAM WILL USE FOR SYSTEM INTERGERATION TEST
 AGAIN TESTING TEAM ALSO TAKE ONE ENVIORMENT AND THEY DOWNLOAD ALL THE  THINGS AGAIN ( ANGULAR , JAVA ,MYSQL ,TOMCAT  ) 
 3. UAT : (USER ACCEPTEANCE TESTING ) CLENT TEAM (OR) CLIENT TEST THAT APPLICATION. THAT APPLICATION IS RUNING BY THERE EXCEPTING 
@@ -108,7 +108,7 @@ OTHER CHALLANGES IN DEPLOYMENT PROCESS :
 | ---> ENVIORMENT SETUP IS TIME TAKEN PROCESS                                         |
 | ---> HUMAN ERROR PRONE ( DOWNLOAD THE WRONG VERSION OF SOFTWARE)                    |
 | ---> OS VERSION (SOME TIMES )                                                       |
-| ---> ENVIORMENT MAINTAINACES                                                        |                                                                                 |
+| ---> ENVIORMENT MAINTAINACES                                                        |                                                                                 
 |_____________________________________________________________________________________|
 
 SOMETIMES CODE WORKS ON DEVLOPERS SYSTEMS BUT SOMETIMES IT DOESN,T WORKS ON TESTER SYSTEMS 
@@ -124,8 +124,43 @@ THE APPLICATION
 ================================
 WHAT IS CONTAINERAZATION ..?
 ================================
-CONTAINERIZATION IS A TECHNOLOGY FOR PACKAGING SOFTWARE IN ISOLATED UNITS CALLED CONTAINERS. THESE CONTAINERS INCLUDE EVERYTHING NEEDED
-TO RUN THE  SOFTWARE - CODE, RUNTIME, SYSTEM TOOLS, SETTINGS - IN A STANDARDIZED FORMAT THAT CAN RUN ANYWHERE WITH DOCKER INSTALLED
+CONTAINERIZATION IS A TECHNOLOGY FOR PACKAGING SOFTWARE IN ISOLATED UNITS CALLED CONTAINERS. THESE 
+CONTAINERS INCLUDE EVERYTHING NEEDED TO RUN THE  SOFTWARE - CODE, RUNTIME, SYSTEM TOOLS, SETTINGS - IN A 
+STANDARDIZED FORMAT THAT CAN RUN ANYWHERE WITH DOCKER INSTALLED
+
+==========================
+CONTAINERATION CONCEPT : 
+============================
+|__________|
+|          |
+| APP CODE | -------------------|
+|__________|                    |                                               |_______________|  
+                                |               |__________________|            | DOCKER        |  ( DEV ENV )
+                                |               |                  |----------->|  COINTAINER   |
+                                |               |   DOCKER         |            |_______________|
+                                |-------------> |      IMAGES      |            
+|_____________|                 |               |                  |            |_______________|
+|             |                 |               |                  |----------->| DOCKER        |
+| NG 13V      |                 |               |__________________|            |  COINTAINER   |  ( SIT ENV )
+| JAVA 17V    |                 |                                               |_______________|
+|TOMCAT 9.0V  |---------------- |
+|MYSQL 8.5V   |                              ( SAME LIKE THAT WE CAN  CREATE REAMING 3 ENVIORMENTS DOCKER CONTAINER )
+|_____________|                                              ( UAT , PILOT , PROD  )
+
+
+WE CAN MAKE PACKAGE APPLICATION CODE AND APPLICATION SOFTWARES (OR) DEPENDICES AS SINGLE UNIT THAT UNIT IS CALLED 
+DOCKER IMAGE. ONCE THE DOCKER IMAGE WAS CRATED FOR THE APPLICATION WE CAN RUN THE APPLICATION IN ANY SYSTEM WITHOUT 
+BOTHERING ABOUT THE DEPENDICES (OR) SOFTWARE 
+
+
+
+
+
+
+
+
+
+
 
 
 
