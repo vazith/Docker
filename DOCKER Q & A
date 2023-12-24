@@ -124,7 +124,7 @@ THE APPLICATION
 ================================
 WHAT IS CONTAINERAZATION ..?
 ================================
-CONTAINERIZATION IS A TECHNOLOGY FOR PACKAGING SOFTWARE IN ISOLATED UNITS CALLED CONTAINERS. THESE 
+CONTAINERIZATION IS A TECHNOLOGY FOR PACKAGING SOFTWARE IN ISOLATED AS SINGLE UNITS CALLED CONTAINERS. THESE 
 CONTAINERS INCLUDE EVERYTHING NEEDED TO RUN THE  SOFTWARE - CODE, RUNTIME, SYSTEM TOOLS, SETTINGS - IN A 
 STANDARDIZED FORMAT THAT CAN RUN ANYWHERE WITH DOCKER INSTALLED
 
@@ -151,6 +151,50 @@ CONTAINERATION CONCEPT :
 WE CAN MAKE PACKAGE APPLICATION CODE AND APPLICATION SOFTWARES (OR) DEPENDICES AS SINGLE UNIT THAT UNIT IS CALLED 
 DOCKER IMAGE. ONCE THE DOCKER IMAGE WAS CRATED FOR THE APPLICATION WE CAN RUN THE APPLICATION IN ANY SYSTEM WITHOUT 
 BOTHERING ABOUT THE DEPENDICES (OR) SOFTWARE 
+
+IF ANY TEAM NEED TO TEST THE APPLICATION THEY SIMPLE DOWNLOAD THAT DOCKER IMAGES  AND TEST THE APPLICATION TRY
+BY USING ONE DOCKER IMAGES WE CAN RUN IN "n" NUMBER OF SYSTEMS WHICH IS CALLED AS DOCKER CONTAINER
+
+
+============================
+DOCKER ARCHIECHTURE
+============================
+1) DOCKER FILE
+2) DOCKER IMAGE
+3) DOCKER REGISTRY
+4) DOCKER CONTAINER
+
+
+|___________|                           (REGISTARY)
+|           |                         |______________|
+|  APP      |                         |  DOCKER      |
+|     CODE  |                         |       HUB    |
+|___________|                         |______________|
+      |                                     ^
+      |                                     |
+      |                                     |  ( PUSH )
+      |                                     |
+      V                                     |
+|___________|                        |______________|
+|           |    ( BUILD )           |              |
+|  DOCKER   | -------------------- > | DOCKER       | 
+|     FILE  |                        |    IMAGES    |
+|___________|                        |              |
+                                     |______________|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
