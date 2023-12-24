@@ -44,6 +44,7 @@ NOW WE UNDERSTAND THE
 =======================================
 ENIVORMENT SETUP TO RUN THE APPLICATION (THIS A ENV SETUP WHICH WAS USED BY DEVLOPERS)
 ========================================
+ENVIORMRNT IS A PLATFORM (OR) PLACE WHERE WE CAN RUN THE APPLICATION
 --> TAKE ONE MACHINE(PHYSICAL / VIRTUAL )
 --> INSTALL ANGULAR 13V 
 --> INSTALL JAVA 17V 
@@ -91,13 +92,24 @@ ONE DEVLOPERS DEVLOP THE APPLICATON THAT APPLICATION WAS TSESTING ON 5(OR) MORE 
 |                      |       |                      |    
 |----------------------|       |----------------------|     
 
+THE MAIN CHALLANGE IS WE HAVE TO INSTALL REQUIRD SOFTWARE IN EVERY SYSTEM 
+EVERY TEAM NEED TO SETUP THE ENIVORMENT AND DOWNLOAD THAT PRE_REQUESTIES  SOFTWARE  RUN THE APPLICATION 
 
- 
+THE MOST IMPORTANT THING IS SOFTWARE VERSION CONFLICTS 
+EX: THE DEV TEAM DEVLOP THE APPLICATION USES  JAVA 17V ..BUT IN CASE OF ANY OTHER TEAM USES JAVA 16 (OR) ANY VERSIONS
+THE APPLICATION IS WON'T WORKS (OR) RUN 
 
 
+OTHER CHALLANGES:
+|_____________________________________________________________________________________|
+| ---> VERSION CONFLICTS CAN OCCURS                                                   |
+| ---> ENVIORMENT SETUP IS TIME TAKEN PROCESS                                         |
+| ---> HUMAN ERROR PRONE ( DOWNLOAD THE WRONG VERSION OF SOFTWARE)                    |
+| ---> OS VERSION(SOME TIMES )                                                        |                                                                                 |
+|_____________________________________________________________________________________|
 
-
-
+SOMETIMES CODE WORKS ON DEVLOPERS SYSTEMS BUT SOMETIMES IT DOESN,T WORKS ON TESTER SYSTEMS 
+BECAUSES OF ENVIORMENTS ISSUSES 
 
 
 
